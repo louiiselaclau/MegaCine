@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C7EE2F33-8017-41BC-A7A4-BE187B348EEB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>View</RootNamespace>
+    <AssemblyName>View</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="viewFilme\FrmVizualizarFilme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewFilme\FrmVizualizarFilme.Designer.cs">
+      <DependentUpon>FrmVizualizarFilme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewFilme\FrmDeletarFilme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewFilme\FrmDeletarFilme.Designer.cs">
+      <DependentUpon>FrmDeletarFilme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewFilme\FrmAlterarFilme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewFilme\FrmAlterarFilme.Designer.cs">
+      <DependentUpon>FrmAlterarFilme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewPagamento\FrmVizualizarPagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewPagamento\FrmVizualizarPagamento.Designer.cs">
+      <DependentUpon>FrmVizualizarPagamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewPagamento\FrmAlterarPagamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewPagamento\FrmAlterarPagamentos.Designer.cs">
+      <DependentUpon>FrmAlterarPagamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewPagamento\FrmDeletarPagamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewPagamento\FrmDeletarPagamentos.Designer.cs">
+      <DependentUpon>FrmDeletarPagamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewPessoa\FrmVizualizarPessoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewPessoa\FrmVizualizarPessoa.Designer.cs">
+      <DependentUpon>FrmVizualizarPessoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewPessoa\FrmAlterarPessoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewPessoa\FrmAlterarPessoa.Designer.cs">
+      <DependentUpon>FrmAlterarPessoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewPessoa\FrmDeletarPessoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewPessoa\FrmDeletarPessoa.Designer.cs">
+      <DependentUpon>FrmDeletarPessoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewPagamento\FrmCadPagamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewPagamento\FrmCadPagamentos.Designer.cs">
+      <DependentUpon>FrmCadPagamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewFilme\FrmCadFilme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewFilme\FrmCadFilme.Designer.cs">
+      <DependentUpon>FrmCadFilme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewPessoa\FrmCadPessoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewPessoa\FrmCadPessoa.Designer.cs">
+      <DependentUpon>FrmCadPessoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="viewFilme\FrmAlterarFilme.resx">
+      <DependentUpon>FrmAlterarFilme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewFilme\FrmCadFilme.resx">
+      <DependentUpon>FrmCadFilme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewFilme\FrmDeletarFilme.resx">
+      <DependentUpon>FrmDeletarFilme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewFilme\FrmVizualizarFilme.resx">
+      <DependentUpon>FrmVizualizarFilme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewPagamento\FrmAlterarPagamentos.resx">
+      <DependentUpon>FrmAlterarPagamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewPagamento\FrmDeletarPagamentos.resx">
+      <DependentUpon>FrmDeletarPagamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewPagamento\FrmVizualizarPagamento.resx">
+      <DependentUpon>FrmVizualizarPagamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewPessoa\FrmAlterarPessoa.resx">
+      <DependentUpon>FrmAlterarPessoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewPessoa\FrmCadPessoa.resx">
+      <DependentUpon>FrmCadPessoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewPagamento\FrmCadPagamentos.resx">
+      <DependentUpon>FrmCadPagamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="viewPessoa\FrmDeletarPessoa.resx">
+      <DependentUpon>FrmDeletarPessoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewPessoa\FrmVizualizarPessoa.resx">
+      <DependentUpon>FrmVizualizarPessoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="viewFilme\App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{7b1da643-f893-408a-a9ba-fde93e13247b}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\megacineee.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\megaaa.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mega2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mega3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rosto-cliente-homem-1024x585.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rosto.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CLIENTE.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TITANIC.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TITANIC1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TITANICC.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TITANCEE.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
